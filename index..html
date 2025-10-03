@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FastProfit — Jaldi Kamai Start Karein</title>
+  <meta name="description" content="Free ebook + ₹299 starter guide. Apna online earning funnel aaj hi shuru karein." />
+  <style>
+    :root{--accent:#0b74de;--muted:#667085}
+    *{box-sizing:border-box}
+    body{font-family:system-ui, -apple-system, Arial, sans-serif;margin:0;color:#0b1a2b;background:#f9fbfe}
+    header{background:linear-gradient(90deg,#f8fbff,#eef6ff);padding:28px 16px}
+    .container{max-width:980px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700;color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:48px 0}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;display:inline-block}
+    .btn.ghost{background:transparent;border:1px solid #dbeafe;color:var(--accent)}
+    .card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(12,40,80,0.06)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    footer{padding:24px 0;color:var(--muted)}
+    form{display:flex;gap:8px;flex-wrap:wrap}
+    input[type=email]{flex:1;padding:12px;border-radius:8px;border:1px solid #e6eef8}
+    @media(min-width:720px){.hero{grid-template-columns:1fr 420px}h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">FastProfit</div>
+      <nav>
+        <a href="#how">Kaise</a> • <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Free Ebook + Starter Guide se Online Earning Start karein</h1>
+        <p class="lead">Apna pehla step: Free download aur phir sirf ₹299 me FastProfit Starter Pack. Digital earning funnel aaj hi shuru karein!</p>
+        <div class="cta">
+          <a class="btn" href="#buy">Get Starter Pack (₹299)</a>
+          <a class="btn ghost" href="#how">Kaise Kaam Karega</a>
+        </div><h3 style="margin-top:22px;">Aapko kya milega</h3>
+    <div class="grid-3" style="margin-top:12px">
+      <div class="card">Free ebook: 10 Money-Making Ideas</div>
+      <div class="card">Step-by-step funnel plan</div>
+      <div class="card">Affiliate + Digital product roadmap</div>
+    </div>
+  </div>
+
+  <aside class="card">
+    <h3>Apna Free Ebook Download Karein</h3>
+    <p class="lead">Email daalein aur turant ebook + free mini-course paayen.</p>
+    <form id="leadForm">
+      <input type="email" id="email" placeholder="Email daalein" required />
+      <button class="btn" type="submit">Download</button>
+    </form>
+    <p id="msg" style="margin-top:8px;color:var(--muted)"></p>
+  </aside>
+</section>
+
+<section id="how" style="margin:28px 0">
+  <h2>Kaise kaam karega (Simple Funnel)</h2>
+  <ol>
+    <li>Traffic laayen (Instagram Reels, YouTube Shorts, WhatsApp share)</li>
+    <li>Free ebook download → email capture</li>
+    <li>Email sequence bheje (trust build + tips)</li>
+    <li>Upsell: Starter Pack ₹299 (digital guide + affiliate links)</li>
+    <li>Payment Razorpay/PayPal link se lein</li>
+  </ol>
+</section>
+
+<section id="pricing" style="margin:28px 0">
+  <h2>FastProfit Offers</h2>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <div class="card" style="flex:1">Starter Pack — ₹299 <br><a href="#buy" class="btn">Buy Now</a></div>
+    <div class="card" style="flex:1">Affiliate Tools & Resources (Free with ebook)</div>
+  </div>
+</section>
+
+<section style="margin:28px 0">
+  <h2>Payment / Buy button (example)</h2>
+  <p class="lead">Yahan Razorpay / PayPal checkout link paste karein. Abhi placeholder button hai:</p>
+  <a id="buy" class="btn" href="#">Checkout (₹299)</a>
+</section>
+
+  </main>  <footer class="container">
+    <p>&copy; FastProfit — Aap is page ko customize karke apna bana sakte hain.</p>
+  </footer>  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var em = document.getElementById('email').value;
+      document.getElementById('msg').textContent = 'Shukriya! Free ebook link aapke email par bheja jayega (demo).';
+    });
+  </script></body>
+</html>
